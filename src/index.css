@@ -1,0 +1,73 @@
+/* src/index.css */
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Configuración global personalizada */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.8); /* Usamos un color más suave para el texto */
+  background-color: #f5f5f5; /* Fondo más suave (gris claro) */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos de enlaces */
+a {
+  font-weight: 500;
+  color: #6a88d6; /* Azul suave para enlaces */
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #4a63b0; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Body: Remplazando con clases de Tailwind para flexbox */
+body {
+  @apply flex items-center justify-center min-h-screen min-w-[320px] bg-gray-100 text-gray-800; /* Fondo claro */
+  margin: 0;
+}
+
+/* Títulos */
+h1 {
+  @apply text-3xl font-semibold leading-tight text-gray-700; /* Título con un tono gris suave */
+}
+
+/* Botones */
+button {
+  @apply rounded-lg border border-transparent py-2 px-4 text-lg font-medium bg-teal-400 text-white cursor-pointer transition-all;
+}
+
+button:hover {
+  @apply bg-teal-500; /* Teal más suave al pasar el ratón */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Estilos en el modo claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #2b3e4d; /* Gris oscuro suave */
+    background-color: #e9eff1; /* Fondo más claro */
+  }
+
+  a:hover {
+    color: #547db2;
+  }
+
+  button {
+    background-color: #81b2a7; /* Verde suave para los botones */
+  }
+}

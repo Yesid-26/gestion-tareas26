@@ -1,0 +1,89 @@
+/* src/App.css */
+
+/* Estilos para el body y html */
+html, body {
+  height: 100%; /* Aseguramos que el body ocupe toda la pantalla */
+  margin: 0; /* Eliminamos márgenes por defecto */
+  background-color: #2d3436; /* Fondo oscuro */
+  color: #f1f1f1;  /* Texto claro para contraste */
+}
+
+/* Estilos del root */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100%; /* Aseguramos que el root ocupe toda la altura */
+}
+
+/* Ajuste de logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #89c9c8); /* Cambio a un color verde menta suave */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Configuración de la tarjeta */
+.card {
+  padding: 2em;
+  background-color: #34495e; /* Fondo oscuro suave para las tarjetas */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  color: #f1f1f1; /* Texto claro dentro de la tarjeta */
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #81b2a7; /* Botón verde suave */
+  border-color: #81b2a7;
+  color: white;
+}
+
+button:hover {
+  background-color: #74a09d; /* Un tono más oscuro del verde */
+  border-color: #74a09d;
+}
+
+/* Otras clases */
+.read-the-docs {
+  color: #888;
+}
+
+/* Agregamos más estilos tranquilos */
+.bg-soft-blue {
+  background-color: #d1e7ff; /* Azul suave */
+}
+
+.text-muted {
+  color: #999; /* Gris suave para textos */
+}
+
+/* Agregando más detalles para el modo oscuro */
+a {
+  color: #81b2a7; /* Enlaces en verde suave */
+}
+
+a:hover {
+  color: #74a09d; /* Enlaces en verde más oscuro al hacer hover */
+}
+
+/* Para los elementos de fondo oscuros y detalles */
+body {
+  background-color: #2d3436; /* Fondo oscuro general */
+  color: #f1f1f1; /* Texto claro para contraste */
+}
+
+/* Títulos con color claro */
+h1 {
+  color: #a6dcef; /* Títulos con un color azul pastel */
+}
