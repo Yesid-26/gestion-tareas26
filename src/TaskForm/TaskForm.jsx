@@ -39,7 +39,7 @@ const TaskForm = ({ task, onSave }) => {
           type="text"
           value={title} // El valor del input es el estado del título
           autoFocus // Se encarga de al iniciar el programa la casilla esté automáticamente seleccionada
-          pattern="[A-Za-z0-9/s]+" // Se encarga de los caracteres y la cantidad de caracteres
+          pattern='[A-Za-z0-9/s] {3,50}' // Se encarga de los caracteres y la cantidad de caracteres
           onChange={(e) => setTitle(e.target.value)} // Actualiza el título cuando cambia el valor
           placeholder="Título" // Texto de ayuda para el campo
           className="border-none w-full focus:outline-none" // Clases de estilo de Tailwind
